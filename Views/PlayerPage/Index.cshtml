@@ -1,0 +1,8 @@
+﻿@model IEnumerable<IWebMVC.Models.Player>
+
+@{
+    foreach(var player in Model)
+    {
+        <p>@player.Name</p>
+    }
+}

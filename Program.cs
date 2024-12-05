@@ -1,3 +1,4 @@
+using IWebMVC.Controllers;
 using IWebMVC.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +14,7 @@ namespace IWebMVC
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+
             builder.Services.AddControllersWithViews();
 
             // set database context
