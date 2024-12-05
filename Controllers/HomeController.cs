@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace IWebMVC.Controllers
 {
+    [Route("[controller]/[action]")]
+    [ApiController]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -13,6 +15,9 @@ namespace IWebMVC.Controllers
             _logger = logger;
         }
 
+        [Route("~/")]
+        [Route("/Home")]
+        [Route("~/Home/Index")]
         public IActionResult Index()
         {
             return View();
